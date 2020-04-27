@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SQL injection</title>
+</head>
+<body>
+
+    <h1>try SQL injection</h1>
+
+    <form action="/data" method="post" data-form>
+        <input type="text" name="term" data-term>
+    </form>
+
+    <div class"results">
+        <table>
+            <thead>
+                <tr>
+                    <td>first name</td>
+                    <td>last name</td>
+                </tr>
+            </thead>
+            <tbody data-results="content">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="/app.js"></script>
+</body>
+</html>
